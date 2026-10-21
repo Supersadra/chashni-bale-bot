@@ -2,6 +2,7 @@ import logging
 import json
 import filter
 import random
+import os
 
 from pathlib import Path
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, Bot
@@ -10,7 +11,10 @@ from telegram.ext.filters import MessageFilter
 
 # Variables
 INGREDIENTS, MEAL, TIME, CATEGORY, SAVE = range(5) # States for conversation handler
-bot_token = "1275096523:yMr7PDRhF4ob81ppzQ0OeaMY6HWspdDyo5A"
+bot_token = os.getenv("BALE_BOT_TOKEN")
+if not bot_token:
+    raise RuntimeError("BALE_BOT_TOKEN تنظیم نشده است.")
+
 def skip_keyboard():
     skip_keyboard = ReplyKeyboardMarkup(
     [["رد کردن سوال"]],
@@ -23,6 +27,7 @@ async def load_data(application: Application) -> None:
     with open(path, "r", encoding="utf-8") as file:
         application.bot_data["foods"] = json.load(file)
     
+
 
 # Enable logging
 logging.basicConfig(
