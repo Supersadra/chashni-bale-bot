@@ -164,4 +164,30 @@ To add a new dish, append another object with the same structure to the `foods.j
 
 Contributions and suggestions are welcome!
 
-Here are some ways to
+Here are some ways to improve Chashni:
+
+- Add more dishes and expand the food database.
+- Improve the ingredient-matching algorithm.
+- Enhance filtering by preparation difficulty and food category.
+- Improve the bot's messages and overall user experience.
+- Add tests for filtering functions and conversation flows.
+
+For major changes, consider opening an issue first to discuss the proposed improvements.
+
+## 🔐 Security
+
+- Never hardcode your bot token in source code.
+- Never commit secrets or credentials to your repository.
+- Add `.env` files and local environment directories to `.gitignore`.
+- If a valid token has been exposed in a public repository or shared code, revoke or regenerate it.
+- Before publishing changes, check that no sensitive information is included.
+
+## 📌 Project Status
+
+Chashni is a Python-based project focused on making everyday meal planning easier through ingredient-based food suggestions.
+
+Future improvements may include more advanced filtering, a larger food database, and more reliable deployment and data storage.
+
+---
+
+Made with 🍲 and Python
