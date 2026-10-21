@@ -266,22 +266,27 @@ async def save(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await query.answer()
     selected_food = query.data
     user_id = query.from_user.id
+    print(user_id)
     
     path = Path(__file__).resolve().parent / "users.json"
     with open(path, "r", encoding="utf-8") as file:
         users = json.load(file)
     
-    for user in users:
-        if user["user_id"] == user_id:
-            if len(user["foods"]) >= 10:
-                del user["foods"][0]
-            user["foods"].append(selected_food)
-            break
-        
-        elif user == users[-1]:
-            new_save = {"user_id": user_id, "foods": [selected_food]}
-            users.append(new_save)
-            break
+    if users:
+        for user in users:
+            if user["user_id"] == user_id:
+                if len(user["foods"]) >= 10:
+                    del user["foods"][0]
+                user["foods"].append(selected_food)
+                break
+            
+            elif user == users[-1]:
+                new_save = {"user_id": user_id, "foods": [selected_food]}
+                users.append(new_save)
+                break
+    else:
+        new_save = {"user_id": user_id, "foods": [selected_food]}
+        users.append(new_save)
 
     with open(path, "w", encoding="utf-8") as file:
         json.dump(users, file, ensure_ascii=False, indent=4)
