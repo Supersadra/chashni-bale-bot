@@ -243,10 +243,13 @@ async def category(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
             users = json.load(file)
             
         # Deleting repetitive foods
-        for user in users:
-            if user["user_id"] == user_id:
-                final_list = set([food["name"] for food in context.user_data["filtered_foods"]]) - set(user["foods"])
-                break
+        if users:
+            for user in users:
+                if user["user_id"] == user_id:
+                    final_list = set([food["name"] for food in context.user_data["filtered_foods"]]) - set(user["foods"])
+                    break
+        else:
+            final_list = set([food["name"] for food in context.user_data["filtered_foods"]])
 
         keyboard = []
         for food_name in final_list:
