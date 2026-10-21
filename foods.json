@@ -1,0 +1,378 @@
+[
+  {
+    "name": "کشک و بادمجان",
+    "ingredients": [
+      "بادمجان",
+      "کشک"
+    ],
+    "meal": "ناهار",
+    "category": "نونی ساده",
+    "time": 2,
+    "difficulty": 2
+  },
+  {
+    "name": "املت گوجه",
+    "ingredients": [
+      "تخم‌مرغ",
+      "گوجه",
+      "روغن"
+    ],
+    "meal": "صبحانه",
+    "category": "نونی ساده",
+    "time": 1,
+    "difficulty": 1
+  },
+  {
+    "name": "نیمرو",
+    "ingredients": [
+      "تخم‌مرغ",
+      "روغن"
+    ],
+    "meal": "صبحانه",
+    "category": "نونی ساده",
+    "time": 1,
+    "difficulty": 1
+  },
+  {
+    "name": "عدسی",
+    "ingredients": [
+      "عدس",
+      "سیب‌زمینی",
+      "پیاز"
+    ],
+    "meal": "صبحانه",
+    "category": "نونی ساده",
+    "time": 2,
+    "difficulty": 1
+  },
+  {
+    "name": "اشکنه",
+    "ingredients": [
+      "تخم‌مرغ",
+      "پیاز",
+      "سیب‌زمینی"
+    ],
+    "meal": "ناهار",
+    "category": "نونی ساده",
+    "time": 2,
+    "difficulty": 2
+  },
+  {
+    "name": "کوکو سبزی",
+    "ingredients": [
+      "سبزی",
+      "تخم‌مرغ",
+      "گردو"
+    ],
+    "meal": "شام",
+    "category": "نونی ساده",
+    "time": 2,
+    "difficulty": 2
+  },
+  {
+    "name": "کوکو سیب‌زمینی",
+    "ingredients": [
+      "سیب‌زمینی",
+      "تخم‌مرغ",
+      "پیاز"
+    ],
+    "meal": "شام",
+    "category": "نونی ساده",
+    "time": 2,
+    "difficulty": 1
+  },
+  {
+    "name": "میرزا قاسمی",
+    "ingredients": [
+      "بادمجان",
+      "گوجه",
+      "تخم‌مرغ"
+    ],
+    "meal": "شام",
+    "category": "نونی ساده",
+    "time": 2,
+    "difficulty": 2
+  },
+  {
+    "name": "آبگوشت",
+    "ingredients": [
+      "گوشت",
+      "نخود",
+      "لوبیا",
+      "سیب‌زمینی"
+    ],
+    "meal": "ناهار",
+    "category": "سنتی",
+    "time": 3,
+    "difficulty": 2
+  },
+  {
+    "name": "قورمه‌سبزی",
+    "ingredients": [
+      "گوشت",
+      "سبزی",
+      "لوبیا",
+      "لیمو"
+    ],
+    "meal": "ناهار",
+    "category": "خورشتی",
+    "time": 3,
+    "difficulty": 2
+  },
+  {
+    "name": "قیمه",
+    "ingredients": [
+      "گوشت",
+      "لپه",
+      "سیب‌زمینی",
+      "رب"
+    ],
+    "meal": "ناهار",
+    "category": "خورشتی",
+    "time": 3,
+    "difficulty": 2
+  },
+  {
+    "name": "قیمه بادمجان",
+    "ingredients": [
+      "گوشت",
+      "لپه",
+      "بادمجان",
+      "رب"
+    ],
+    "meal": "ناهار",
+    "category": "خورشتی",
+    "time": 3,
+    "difficulty": 3
+  },
+  {
+    "name": "خورش کرفس",
+    "ingredients": [
+      "گوشت",
+      "کرفس",
+      "سبزی",
+      "لیمو"
+    ],
+    "meal": "ناهار",
+    "category": "خورشتی",
+    "time": 3,
+    "difficulty": 3
+  },
+  {
+    "name": "خورش بامیه",
+    "ingredients": [
+      "گوشت",
+      "بامیه",
+      "گوجه",
+      "رب"
+    ],
+    "meal": "ناهار",
+    "category": "خورشتی",
+    "time": 3,
+    "difficulty": 2
+  },
+  {
+    "name": "زرشک‌پلو با مرغ",
+    "ingredients": [
+      "مرغ",
+      "برنج",
+      "زرشک",
+      "زعفران"
+    ],
+    "meal": "ناهار",
+    "category": "برنجی",
+    "time": 3,
+    "difficulty": 2
+  },
+  {
+    "name": "عدس‌پلو",
+    "ingredients": [
+      "برنج",
+      "عدس",
+      "کشمش",
+      "گوشت"
+    ],
+    "meal": "ناهار",
+    "category": "برنجی",
+    "time": 3,
+    "difficulty": 2
+  },
+  {
+    "name": "لوبیاپلو",
+    "ingredients": [
+      "برنج",
+      "لوبیا سبز",
+      "گوشت",
+      "رب"
+    ],
+    "meal": "ناهار",
+    "category": "برنجی",
+    "time": 3,
+    "difficulty": 3
+  },
+  {
+    "name": "استانبولی",
+    "ingredients": [
+      "برنج",
+      "گوجه",
+      "سیب‌زمینی",
+      "گوشت"
+    ],
+    "meal": "ناهار",
+    "category": "برنجی",
+    "time": 2,
+    "difficulty": 1
+  },
+  {
+    "name": "دمپختک",
+    "ingredients": [
+      "برنج",
+      "باقلا",
+      "تخم‌مرغ"
+    ],
+    "meal": "ناهار",
+    "category": "برنجی",
+    "time": 2,
+    "difficulty": 1
+  },
+  {
+    "name": "باقالی‌پلو با مرغ",
+    "ingredients": [
+      "برنج",
+      "باقلا",
+      "مرغ",
+      "شوید"
+    ],
+    "meal": "ناهار",
+    "category": "برنجی",
+    "time": 3,
+    "difficulty": 2
+  },
+  {
+    "name": "ته‌چین مرغ",
+    "ingredients": [
+      "برنج",
+      "مرغ",
+      "ماست",
+      "تخم‌مرغ"
+    ],
+    "meal": "ناهار",
+    "category": "برنجی",
+    "time": 3,
+    "difficulty": 3
+  },
+  {
+    "name": "کته",
+    "ingredients": [
+      "برنج",
+      "آب",
+      "نمک"
+    ],
+    "meal": "ناهار",
+    "category": "برنجی",
+    "time": 2,
+    "difficulty": 1
+  },
+  {
+    "name": "ماکارونی",
+    "ingredients": [
+      "ماکارونی",
+      "گوشت",
+      "رب",
+      "پیاز"
+    ],
+    "meal": "ناهار",
+    "category": "پاستا",
+    "time": 2,
+    "difficulty": 1
+  },
+  {
+    "name": "لازانیا",
+    "ingredients": [
+      "لازانیا",
+      "گوشت",
+      "پنیر",
+      "سس"
+    ],
+    "meal": "ناهار",
+    "category": "پاستا",
+    "time": 3,
+    "difficulty": 3
+  },
+  {
+    "name": "کتلت",
+    "ingredients": [
+      "گوشت",
+      "سیب‌زمینی",
+      "تخم‌مرغ",
+      "پیاز"
+    ],
+    "meal": "شام",
+    "category": "نونی ساده",
+    "time": 2,
+    "difficulty": 3
+  },
+  {
+    "name": "شامی",
+    "ingredients": [
+      "گوشت",
+      "لپه",
+      "تخم‌مرغ",
+      "پیاز"
+    ],
+    "meal": "شام",
+    "category": "نونی ساده",
+    "time": 3,
+    "difficulty": 3
+  },
+  {
+    "name": "فلافل",
+    "ingredients": [
+      "نخود",
+      "پیاز",
+      "ادویه"
+    ],
+    "meal": "شام",
+    "category": "نونی ساده",
+    "time": 2,
+    "difficulty": 2
+  },
+  {
+    "name": "ساندویچ مرغ",
+    "ingredients": [
+      "مرغ",
+      "نان",
+      "کاهو",
+      "سس"
+    ],
+    "meal": "شام",
+    "category": "فست‌فود",
+    "time": 2,
+    "difficulty": 1
+  },
+  {
+    "name": "سوسیس تخم‌مرغ",
+    "ingredients": [
+      "سوسیس",
+      "تخم‌مرغ",
+      "گوجه"
+    ],
+    "meal": "شام",
+    "category": "فست‌فود",
+    "time": 1,
+    "difficulty": 1
+  },
+  {
+    "name": "پیتزا خانگی",
+    "ingredients": [
+      "خمیر",
+      "پنیر",
+      "گوشت",
+      "قارچ"
+    ],
+    "meal": "شام",
+    "category": "فست‌فود",
+    "time": 3,
+    "difficulty": 3
+  }
+]
