@@ -3,8 +3,6 @@ import json
 import filter
 import random
 import os
-import threading
-from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 from pathlib import Path
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, Bot
@@ -324,37 +322,8 @@ async def cancel_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     return ConversationHandler.END
 
 
-class HealthHandler(BaseHTTPRequestHandler):
-    """Minimal HTTP endpoint so Render Web Service can detect an open port."""
-
-    def do_GET(self):
-        if self.path in ("/", "/health"):
-            body = b"Chashni bot is running"
-            self.send_response(200)
-            self.send_header("Content-Type", "text/plain; charset=utf-8")
-            self.send_header("Content-Length", str(len(body)))
-            self.end_headers()
-            self.wfile.write(body)
-        else:
-            self.send_response(404)
-            self.end_headers()
-
-    def log_message(self, format, *args):
-        # Keep routine health checks out of the logs.
-        return
-
-
-def start_health_server() -> None:
-    # Render provides PORT. 10000 is a local-development fallback.
-    port = int(os.getenv("PORT", "10000"))
-    server = ThreadingHTTPServer(("0.0.0.0", port), HealthHandler)
-    thread = threading.Thread(target=server.serve_forever, daemon=True)
-    thread.start()
-    logger.info("Health server listening on port %s", port)
-
 
 def main() -> None:
-    start_health_server()
     application = Application.builder().token(bot_token).post_init(load_data).base_url("https://tapi.bale.ai/bot").build()
 
     # on different commands - answer in Telegram
