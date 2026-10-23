@@ -41,16 +41,11 @@ logger = logging.getLogger(__name__)
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text("""
-        سلام! با این ربات دیگه دغدغه پیدا کردن غذا
-        برای برنامه های مختلف رو نداشته باش.
-         از مهمونی و دورهمی تا برنامه غذایی هفتگی!
-
-    """)
+    await update.message.reply_text("سلام! با استفاده از دستور /help می‌تونی تمام دستورات قابل اجرای ربات رو ببینی.")
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text("در حال حاضر دستورات زیر در ربات فعال هستن:\n\n/suggest\nبا استفاده از این دستور می‌تونی پیشنهاد غذا بگیری.\n\n/random_suggest\nبا استفاده از این دستور می‌تونی پیشنهاد سه غذا رو بصورت تصادفی بگیری.\n\n/cancel\nبا استفاده از دستور فرآیند در حال اجرا لغو می‌شود.")
+    await update.message.reply_text("در حال حاضر دستورات زیر در ربات فعال هستن:\n\n/suggest\nبا استفاده از این دستور می‌تونی پیشنهاد غذا بگیری.\n\n/random_suggest\nبا استفاده از این دستور می‌تونی پیشنهاد سه غذا رو بصورت تصادفی بگیری.\n\n/cancel\nبا استفاده از این دستور فرآیند در حال اجرا لغو می‌شود.")
 
 ######################### Suggest command conversation #########################
 async def suggest_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
